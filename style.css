@@ -96,7 +96,7 @@ input[type="text"],input[type="number"]{
     padding: 10px;
     margin: 10px 0;
 }
-.list li.minus{
+.list li.plus{
     border-right: 5px solid #2ecc71;
 }
 .list li.minus{
@@ -110,10 +110,15 @@ input[type="text"],input[type="number"]{
     font-size: 20px;
     line-height: 20px;
     padding: 2px 5px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform :translate(680%,375%);
-    
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
 
+/* Optional: Add hover effect to the button */
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+.list li:hover .delete-btn{
+    opacity: 1;
+    
 }
