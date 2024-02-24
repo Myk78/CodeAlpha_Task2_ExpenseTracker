@@ -104,11 +104,16 @@ input[type="text"],input[type="number"]{
 }
 .delete-btn{
     cursor: pointer;
-    background-color: #e7e7e7;
+    background-color: #e74c3c;
     border: 0;
     color: #fff;
     font-size: 20px;
     line-height: 20px;
-    padding: px 5px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform :translate(680%,375%);
+    
 
 }
