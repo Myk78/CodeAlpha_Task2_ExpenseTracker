@@ -76,10 +76,18 @@ function addTransactionDOM(transaction){
     `
     ${transaction.text}<span>${sign}${Math.abs(transaction.amount)}
     </span>
-    <button class="delete-btn" onclick="">X</button
+    <button class="delete-btn" onclick=" removeTransaction(${transaction.id})">X</button
     `;
 
     list.appendChild(item)
+}
+
+// Remove Transaction 
+function removeTransaction(id) {
+    transactions = transactions.filter((transactions) => transactions.id !== id
+    );
+    Init();
+    
 }
 
 
